@@ -740,6 +740,15 @@ body {
     font-size: 16px;
     color: var(--text-black);
 }
+
+input[type="radio"]{
+    appearance:auto;
+    -webkit-appearance:radio;
+    width:16px;
+    height:16px;
+    margin-right:6px;
+}
+
 /* ====== END MAIN CSS ============ */
 
 /* ------------------------------------------------------------------------- */
