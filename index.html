@@ -564,7 +564,7 @@
                     <span class="invitation_day banner_date">29</span>.
                     <span class="invitation_month banner_month">3</span>.
                     <span class="invitation_year banner_year">2026</span>
-                    <p class="name_palace banner_location_name">Tư Gia Nhà Trai</p>
+                    <p class="name_palace banner_location_name">CTM Palace</p>
                     <address class="invitation_address banner_location_adress">
                         Tầng 4, 131 Đ. Nguyễn Phong Sắc, Dịch Vọng Hậu, Cầu Giấy, Hà Nội </address>
                 </div>
@@ -603,7 +603,7 @@
             </div>
             <div class="about-card" style="order:1">
                 <div class="about-media" data-aos="fade-up" data-aos-duration="3000">
-                    <img src="images/c0EHn5v3zjeWqD3RMh3zY8bMFbIg8GzodOnRIj77.jpg" alt="" class="groom_img">
+                    <img src="images/a0f3b7c4-32a2-4637-aefb-0e914e6d961f.jpg" alt="" class="groom_img">
                 </div>
                 <div class="about-data uk-text-center" data-aos="fade-down" data-aos-duration="1000">
                     <h3 class="groom_name script-font">Anh Minh</h3>
@@ -656,7 +656,7 @@
     <!-- END VIDEO -->
     <!-- COUNTDOWN -->
 
-    <section id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light" style="background-image:url(images/cfVcd2WbZ9CvWeYpOlvNWWAcpQWMIfPB0LRUSkxE.jpg)">
+    <section id="countdown-secton" class="uk-background-cover uk-section uk-section-large uk-text-center uk-light" style="background-image:url(images/5060113b-c37b-4477-8124-d71ccd6055d5.jpg)">
         <div class="uk-container">
 
             <h2 class="uk-heading-small uk-text-center script-font" style="margin-top:160px;">
@@ -735,7 +735,7 @@
                                         2026 </span>
                                 </div>
 
-                                <p class="invi_amlich">Tức ngày 10 tháng 02 năm Ất Tỵ</p>
+                                <p class="invi_amlich">Tức ngày 10 tháng 02 năm Bính Ngọ</p>
                             </div>
 
                         </div>
@@ -755,7 +755,7 @@
                     <div class="invitation-card"> <img src="images/c0EHn5v3zjeWqD3RMh3zY8bMFbIg8GzodOnRIj77.jpg" alt="">
                         <h3 class="card-title uk-margin-remove">Tiệc Nhà Trai</h3>
                         <address class="uk-margin-remove">
-                            <p>Tầng 4, 131 Đ. Nguyễn Phong Sắc, Dịch Vọng Hậu, Cầu Giấy, Hà Nội</p>
+                            <p>CTM Palace Tầng 4, 131 Đ. Nguyễn Phong Sắc, Dịch Vọng Hậu, Cầu Giấy, Hà Nội</p>
                         </address>
                         <div class="invitation-body">
                             <div class="invi_time">
@@ -777,7 +777,7 @@
                                         2026 </span>
                                 </div>
 
-                                <p class="invi_amlich">Tức ngày 11 tháng 02 năm Ất Tỵ</p>
+                                <p class="invi_amlich">Tức ngày 11 tháng 02 năm Bính Ngọ</p>
                             </div>
 
                         </div>
@@ -1311,5 +1311,57 @@ let invite = document.querySelector('input[name="invite"]:checked').value;
 
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dc3cace7da266c4',t:'MTc3MzQ5NjY5Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
 
+<div id="scrollHint">
+  <div class="arrow"></div>
+  <div class="text">Vuốt xuống xem thêm</div>
+</div>
 
+<style>
+#scrollHint{
+  position:fixed;
+  bottom:30px;
+  left:50%;
+  transform:translateX(-50%);
+  text-align:center;
+  cursor:pointer;
+  z-index:9999;
+  animation:bounce 1.6s infinite;
+  font-family: sans-serif;
+}
+
+#scrollHint .arrow{
+  width:20px;
+  height:20px;
+  border-right:3px solid white;
+  border-bottom:3px solid white;
+  transform:rotate(45deg);
+  margin:0 auto 6px;
+}
+
+#scrollHint .text{
+  color:white;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+@keyframes bounce{
+  0%,100%{transform:translate(-50%,0);}
+  50%{transform:translate(-50%,10px);}
+}
+</style>
+
+<script>
+const hint=document.getElementById("scrollHint");
+
+hint.onclick=()=>{
+  window.scrollBy({
+    top:window.innerHeight,
+    behavior:"smooth"
+  });
+};
+
+window.addEventListener("scroll",()=>{
+  hint.style.display=window.scrollY>150?"none":"block";
+});
+</script>
 </body></html>
